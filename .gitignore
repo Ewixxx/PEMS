@@ -19,3 +19,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+echo "my-app/iot-poultry-10f80-firebase-adminsdk-fbsvc-46856e1945.json" >> .gitignore
