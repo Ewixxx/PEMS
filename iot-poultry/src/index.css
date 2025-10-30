@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@import "tailwindcss/utilities";
+
+/* Custom overrides */
+html, body {
+  background-color: #111 !important;
+  color: #e5e5e5 !important;
+}
+
+.bg-black\/70 {
+  background-color: rgba(66, 66, 66, 0.7) !important;
+}
+
+.bg-gray-900 {
+  background-color: #111827 !important;
+}
+
+.text-gray-200 {
+  color: #e5e7eb !important;
+}
+
+.max-50cm {
+  max-width: 50cm;
+  max-height: 50cm;
+}
+
+/* Custom animation */
+@keyframes waveCombine {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(25%) translateY(3px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.animate-waveCombine {
+  animation: waveCombine 3s infinite linear;
+}
+
+/* Apple green slider */
+input[type="range"].apple-green-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 9999px;
+  background: #d1fae5;
+  outline: none;
+}
+
+/* WebKit thumb */
+input[type="range"].apple-green-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  background: #22c55e;
+  cursor: pointer;
+  border: 2px solid #16a34a;
+  transition: background 0.2s;
+}
+
+input[type="range"].apple-green-slider::-webkit-slider-thumb:hover {
+  background: #16a34a;
+}
+
+/* Firefox */
+input[type="range"].apple-green-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  background: #22c55e;
+  cursor: pointer;
+  border: 2px solid #16a34a;
+  transition: background 0.2s;
+}
+
+input[type="range"].apple-green-slider::-moz-range-track {
+  background: #d1fae5;
+  height: 8px;
+  border-radius: 9999px;
+}

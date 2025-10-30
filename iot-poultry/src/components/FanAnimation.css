@@ -1,0 +1,22 @@
+.fan-blades {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.2s linear;
+}
+
+.spin-slow {
+  animation: spin 3s linear infinite;
+}
+
+.spin-medium {
+  animation: spin 1s linear infinite;
+}
+
+.spin-fast {
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
